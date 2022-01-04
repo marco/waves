@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9332C99277E7BF90010B05C /* MarcoVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C89277E7BF50010B05C /* MarcoVPNApp.swift */; };
+		A9332C9A277E7BF90010B05C /* MarcoVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C89277E7BF50010B05C /* MarcoVPNApp.swift */; };
+		A9332C9B277E7BF90010B05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C8A277E7BF50010B05C /* ContentView.swift */; };
+		A9332C9C277E7BF90010B05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332C8A277E7BF50010B05C /* ContentView.swift */; };
+		A9332C9D277E7BF90010B05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9332C8B277E7BF90010B05C /* Assets.xcassets */; };
+		A9332C9E277E7BF90010B05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9332C8B277E7BF90010B05C /* Assets.xcassets */; };
+		A9332CAE277E7C3A0010B05C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9332CAD277E7C3A0010B05C /* NetworkExtension.framework */; platformFilter = maccatalyst; };
+		A9332CB1277E7C3A0010B05C /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332CB0277E7C3A0010B05C /* PacketTunnelProvider.swift */; };
+		A9332CB6277E7C3A0010B05C /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9332CAB277E7C3A0010B05C /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9332CBD277E7C9C0010B05C /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = A9332CBC277E7C9C0010B05C /* WireGuardKit */; };
+		A9332CC5277E7D470010B05C /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = A9332CC4277E7D470010B05C /* WireGuardKit */; };
+		A9332CC8277E806A0010B05C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9332CC7277E806A0010B05C /* NetworkExtension.framework */; };
+		A9332CCB277E81590010B05C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332CCA277E81590010B05C /* Config.swift */; };
+		A9332CCD277E89E60010B05C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9332CCA277E81590010B05C /* Config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9332CB4277E7C3A0010B05C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9332C84277E7BF40010B05C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9332CAA277E7C3A0010B05C;
+			remoteInfo = PacketTunnel;
+		};
+		A9332CC2277E7D420010B05C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9332C84277E7BF40010B05C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9332CBE277E7CE70010B05C;
+			remoteInfo = WireGuardGoBridgeiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9332CBA277E7C3A0010B05C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9332CB6277E7C3A0010B05C /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9332C89277E7BF50010B05C /* MarcoVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcoVPNApp.swift; sourceTree = "<group>"; };
+		A9332C8A277E7BF50010B05C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9332C8B277E7BF90010B05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9332C90277E7BF90010B05C /* MarcoVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9332C96277E7BF90010B05C /* MarcoVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9332C98277E7BF90010B05C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A9332CAB277E7C3A0010B05C /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9332CAD277E7C3A0010B05C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		A9332CB0277E7C3A0010B05C /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		A9332CB2277E7C3A0010B05C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9332CB3277E7C3A0010B05C /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		A9332CC7277E806A0010B05C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
+		A9332CC9277E80A90010B05C /* MarcoVPN (iOS).entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "MarcoVPN (iOS).entitlements"; sourceTree = "<group>"; };
+		A9332CCA277E81590010B05C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A9332CCC277E83C10010B05C /* MarcoVPN--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MarcoVPN--iOS--Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9332C8D277E7BF90010B05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332CBD277E7C9C0010B05C /* WireGuardKit in Frameworks */,
+				A9332CC8277E806A0010B05C /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9332C93277E7BF90010B05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9332CA8277E7C3A0010B05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332CC5277E7D470010B05C /* WireGuardKit in Frameworks */,
+				A9332CAE277E7C3A0010B05C /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9332C83277E7BF40010B05C = {
+			isa = PBXGroup;
+			children = (
+				A9332CCC277E83C10010B05C /* MarcoVPN--iOS--Info.plist */,
+				A9332CC9277E80A90010B05C /* MarcoVPN (iOS).entitlements */,
+				A9332C88277E7BF50010B05C /* Shared */,
+				A9332C97277E7BF90010B05C /* macOS */,
+				A9332CAF277E7C3A0010B05C /* PacketTunnel */,
+				A9332CAC277E7C3A0010B05C /* Frameworks */,
+				A9332C91277E7BF90010B05C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9332C88277E7BF50010B05C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A9332C89277E7BF50010B05C /* MarcoVPNApp.swift */,
+				A9332C8A277E7BF50010B05C /* ContentView.swift */,
+				A9332CCA277E81590010B05C /* Config.swift */,
+				A9332C8B277E7BF90010B05C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A9332C91277E7BF90010B05C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9332C90277E7BF90010B05C /* MarcoVPN.app */,
+				A9332C96277E7BF90010B05C /* MarcoVPN.app */,
+				A9332CAB277E7C3A0010B05C /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9332C97277E7BF90010B05C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A9332C98277E7BF90010B05C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A9332CAC277E7C3A0010B05C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9332CC7277E806A0010B05C /* NetworkExtension.framework */,
+				A9332CAD277E7C3A0010B05C /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9332CAF277E7C3A0010B05C /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				A9332CB0277E7C3A0010B05C /* PacketTunnelProvider.swift */,
+				A9332CB2277E7C3A0010B05C /* Info.plist */,
+				A9332CB3277E7C3A0010B05C /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		A9332CBE277E7CE70010B05C /* WireGuardGoBridgeiOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = A9332CBF277E7CE70010B05C /* Build configuration list for PBXLegacyTarget "WireGuardGoBridgeiOS" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = WireGuardKitGo;
+			dependencies = (
+			);
+			name = WireGuardGoBridgeiOS;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireGuardGoBridgeiOS;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		A9332C8F277E7BF90010B05C /* MarcoVPN (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9332CA1277E7BF90010B05C /* Build configuration list for PBXNativeTarget "MarcoVPN (iOS)" */;
+			buildPhases = (
+				A9332C8C277E7BF90010B05C /* Sources */,
+				A9332C8D277E7BF90010B05C /* Frameworks */,
+				A9332C8E277E7BF90010B05C /* Resources */,
+				A9332CBA277E7C3A0010B05C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9332CB5277E7C3A0010B05C /* PBXTargetDependency */,
+			);
+			name = "MarcoVPN (iOS)";
+			packageProductDependencies = (
+				A9332CBC277E7C9C0010B05C /* WireGuardKit */,
+			);
+			productName = "MarcoVPN (iOS)";
+			productReference = A9332C90277E7BF90010B05C /* MarcoVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9332C95277E7BF90010B05C /* MarcoVPN (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9332CA4277E7BF90010B05C /* Build configuration list for PBXNativeTarget "MarcoVPN (macOS)" */;
+			buildPhases = (
+				A9332C92277E7BF90010B05C /* Sources */,
+				A9332C93277E7BF90010B05C /* Frameworks */,
+				A9332C94277E7BF90010B05C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MarcoVPN (macOS)";
+			productName = "MarcoVPN (macOS)";
+			productReference = A9332C96277E7BF90010B05C /* MarcoVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9332CAA277E7C3A0010B05C /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9332CB7277E7C3A0010B05C /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				A9332CA7277E7C3A0010B05C /* Sources */,
+				A9332CA8277E7C3A0010B05C /* Frameworks */,
+				A9332CA9277E7C3A0010B05C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9332CC3277E7D420010B05C /* PBXTargetDependency */,
+			);
+			name = PacketTunnel;
+			packageProductDependencies = (
+				A9332CC4277E7D470010B05C /* WireGuardKit */,
+			);
+			productName = PacketTunnel;
+			productReference = A9332CAB277E7C3A0010B05C /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9332C84277E7BF40010B05C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A9332C8F277E7BF90010B05C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A9332C95277E7BF90010B05C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A9332CAA277E7C3A0010B05C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A9332CBE277E7CE70010B05C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A9332C87277E7BF40010B05C /* Build configuration list for PBXProject "MarcoVPN" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9332C83277E7BF40010B05C;
+			packageReferences = (
+				A9332CBB277E7C9C0010B05C /* XCRemoteSwiftPackageReference "wireguard-apple" */,
+			);
+			productRefGroup = A9332C91277E7BF90010B05C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9332C8F277E7BF90010B05C /* MarcoVPN (iOS) */,
+				A9332C95277E7BF90010B05C /* MarcoVPN (macOS) */,
+				A9332CAA277E7C3A0010B05C /* PacketTunnel */,
+				A9332CBE277E7CE70010B05C /* WireGuardGoBridgeiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9332C8E277E7BF90010B05C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332C9D277E7BF90010B05C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9332C94277E7BF90010B05C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332C9E277E7BF90010B05C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9332CA9277E7C3A0010B05C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9332C8C277E7BF90010B05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332C9B277E7BF90010B05C /* ContentView.swift in Sources */,
+				A9332C99277E7BF90010B05C /* MarcoVPNApp.swift in Sources */,
+				A9332CCD277E89E60010B05C /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9332C92277E7BF90010B05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332C9C277E7BF90010B05C /* ContentView.swift in Sources */,
+				A9332C9A277E7BF90010B05C /* MarcoVPNApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9332CA7277E7C3A0010B05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9332CB1277E7C3A0010B05C /* PacketTunnelProvider.swift in Sources */,
+				A9332CCB277E81590010B05C /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9332CB5277E7C3A0010B05C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9332CAA277E7C3A0010B05C /* PacketTunnel */;
+			targetProxy = A9332CB4277E7C3A0010B05C /* PBXContainerItemProxy */;
+		};
+		A9332CC3277E7D420010B05C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9332CBE277E7CE70010B05C /* WireGuardGoBridgeiOS */;
+			targetProxy = A9332CC2277E7D420010B05C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9332C9F277E7BF90010B05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9332CA0277E7BF90010B05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A9332CA2277E7BF90010B05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MarcoVPN (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarcoVPN--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "insert-organization-identifier.insert-app-identifier";
+				PRODUCT_NAME = MarcoVPN;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9332CA3277E7BF90010B05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MarcoVPN (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarcoVPN--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "insert-organization-identifier.insert-app-identifier";
+				PRODUCT_NAME = MarcoVPN;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9332CA5277E7BF90010B05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "insert-organization-identifier.insert-app-identifier";
+				PRODUCT_NAME = MarcoVPN;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9332CA6277E7BF90010B05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "insert-organization-identifier.insert-app-identifier";
+				PRODUCT_NAME = MarcoVPN;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A9332CB8277E7C3A0010B05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "insert-organization-identifier.insert-app-identifier.PacketTunnel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9332CB9277E7C3A0010B05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "insert-organization-identifier.insert-app-identifier.PacketTunnel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9332CC0277E7CE70010B05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9332CC1277E7CE70010B05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9332C87277E7BF40010B05C /* Build configuration list for PBXProject "MarcoVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9332C9F277E7BF90010B05C /* Debug */,
+				A9332CA0277E7BF90010B05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9332CA1277E7BF90010B05C /* Build configuration list for PBXNativeTarget "MarcoVPN (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9332CA2277E7BF90010B05C /* Debug */,
+				A9332CA3277E7BF90010B05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9332CA4277E7BF90010B05C /* Build configuration list for PBXNativeTarget "MarcoVPN (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9332CA5277E7BF90010B05C /* Debug */,
+				A9332CA6277E7BF90010B05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9332CB7277E7C3A0010B05C /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9332CB8277E7C3A0010B05C /* Debug */,
+				A9332CB9277E7C3A0010B05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9332CBF277E7CE70010B05C /* Build configuration list for PBXLegacyTarget "WireGuardGoBridgeiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9332CC0277E7CE70010B05C /* Debug */,
+				A9332CC1277E7CE70010B05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9332CBB277E7C9C0010B05C /* XCRemoteSwiftPackageReference "wireguard-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.zx2c4.com/wireguard-apple";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9332CBC277E7C9C0010B05C /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9332CBB277E7C9C0010B05C /* XCRemoteSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
+		A9332CC4277E7D470010B05C /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9332CBB277E7C9C0010B05C /* XCRemoteSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9332C84277E7BF40010B05C /* Project object */;
+}

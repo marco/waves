@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WireGuardKit",
+        "repositoryURL": "https://git.zx2c4.com/wireguard-apple",
+        "state": {
+          "branch": "master",
+          "revision": "23618f994f17d8ad8f2f65d79b4a1e8a0830b334",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
